@@ -1,7 +1,7 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>New user Register for DevOps Learning😊😊</h1>
-    <p>Please fill in this form to create an account.</p>
+    <h1>Welcome to the Devops Bootcamp</h1>
+    <p>Please Fill this Form to Enroll</p>
     <hr>
      
     <label for="Name"><b>Enter Name</b></label>
@@ -31,6 +31,6 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-   <h1> All the Best🥰🥰🥰 for your Devops Journey </h1>
+   <h1> All the Best for your Devops Journey.Hope the next year will be the best year</h1>
   
 </form>
