@@ -4,23 +4,23 @@
     <p>Please Fill this Form to Enroll</p>
     <hr>
      
-    <label for="Name"><b>UserName</b></label>
-    <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
+    <label for="Name"><b>Full Name</b></label>
+    <input type="text" placeholder="UserName" name="Name" id="Name" required>
     <br>
     
-    <label for="mobile"><b>Mobile Number</b></label>
+    <label for="mobile"><b>Mobile</b></label>
     <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
     <br>
 
-    <label for="email"><b>username@gmail.com</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="username@gmail.com" name="email" id="email" required>
     <br>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
     <br>
 
-    <label for="psw-repeat"><b>Re-Enter Password</b></label>
+    <label for="psw-repeat"><b>Confirm Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
     <hr>
     <br>
