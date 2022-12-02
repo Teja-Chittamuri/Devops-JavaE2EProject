@@ -1,23 +1,28 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>Welcome to the Devops Bootcamp</h1>
-    <p>Please Fill this Form to Enroll</p>
+
+    <h1>Advanced Devops Bootcamp</h1>
+    <p>Enroll Now</p>
     <hr>
      
     <label for="Name"><b>Full Name</b></label>
     <input type="text" placeholder="UserName" name="Name" id="Name" required>
     <br>
+    <br>
     
     <label for="mobile"><b>Mobile</b></label>
     <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
+    <br>
     <br>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="username@gmail.com" name="email" id="email" required>
     <br>
+    <br>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <br>
     <br>
 
     <label for="psw-repeat"><b>Confirm Password</b></label>
@@ -31,6 +36,7 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-   <h1> All the Best for your Devops Journey.Hope the next year will be the best year</h1>
+  <h1> All the Best for your Devops Journey. </h1>
+  <h2>Hope the next year will be the best year for you all</h2>
   
 </form>
