@@ -2,7 +2,7 @@
   <div class="container">
 
     <h1>Advanced Devops Bootcamp</h1>
-    <p>Enroll Now</p>
+    <button type='submit'>Enroll Now</button>
     <hr>
      
     <label for="Name"><b>Full Name</b></label>
@@ -10,8 +10,8 @@
     <br>
     <br>
     
-    <label for="mobile"><b>Mobile</b></label>
-    <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
+    <label for="mobile"><b>Mobile Number</b></label>
+    <input type="text" placeholder="9008700300" name="mobile" id="mobile" required>
     <br>
     <br>
 
@@ -26,7 +26,7 @@
     <br>
 
     <label for="psw-repeat"><b>Confirm Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <input type="password" placeholder="Re-enter Password" name="psw-repeat" id="psw-repeat" required>
     <hr>
     <br>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
@@ -36,7 +36,7 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-  <h1> All the Best for your Devops Journey. </h1>
+  <h1> All the Best for your Devops Journey</h1>
   <h2>Hope the next year will be the best year for you all</h2>
   
 </form>
