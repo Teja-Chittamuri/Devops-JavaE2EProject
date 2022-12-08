@@ -1,8 +1,8 @@
 <form action="action_page.php">
   <div class="container">
 
-    <h1>AWS Devops Bootcamp</h1>
-    <p> Tools Covered: Githb , Jnekins , Maven , sonarqube , Jfrog , Docker , Kubetnetes , Grafana </p>
+    <h1>AZURE Devops Bootcamp</h1>
+    <p> Tools Covered: Github || Jenkins || Maven || sonarqube || Jfrog ||Docker || Kubernetes || Grafana </p>
     <button type='submit'>Enroll Now</button>
     <hr>
      
