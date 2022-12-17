@@ -12,7 +12,7 @@ pipeline{
   stages{
     stage('Fetch the code'){
       steps{
-        git branch: 'master' , url: 'git@github.com:Teja-Chittamuri/HelloWolrd-DevopsE2E.git'
+        git branch: 'master' , url: 'https://github.com/Teja-Chittamuri/HelloWolrd-DevopsE2E.git'
       }
     }
     stage('Build code')
