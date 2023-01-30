@@ -1,8 +1,12 @@
 <form action="action_page.php">
   <div class="container">
+<<<<<<< HEAD
 
+    <h1>Devops Bootcamp 2023</h1>
+=======
     <h1>AZURE Devops Bootcamp</h1>
     <p> Tools Covered: Github || Jenkins || Maven || sonarqube || Jfrog ||Docker || Kubernetes || Grafana </p>
+>>>>>>> 3f0081773dd0a7d37fcc3d2731c2d33da775045e
     <button type='submit'>Enroll Now</button>
     <hr>
      
