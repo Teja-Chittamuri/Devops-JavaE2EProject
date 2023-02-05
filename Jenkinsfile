@@ -19,7 +19,7 @@ pipeline
             steps{
                  sh 'mvn checkstyle:checkstyle'
             }
-            stesp{
+            steps{
                 sh 'docker build -t helloworld:v3 .'
             }
             steps{
