@@ -13,16 +13,13 @@ pipeline
         }
         stage('Deploy'){
               agent{
-                docker {image 'tomcat:latest'}
+                docker {image 'docker'}
               }
    
             steps{
                 sh 'docker build -t helloworld:v3 .'
             }
-            steps{
-                sh 'docker run -d --name webapp -p 8080:8080 helloworld:v3'
-                
-            }
+
 
         }
     }
