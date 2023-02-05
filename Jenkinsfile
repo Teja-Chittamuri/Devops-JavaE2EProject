@@ -2,10 +2,10 @@ pipeline
 {
     agent none
     stages{
-        stage('Buidling a war artifact & Deploying it to tomcat')
+        stage('Buid')
         {
             agent{
-                docker {image 'semoss/docker-tomcat'}
+                docker { image 'semoss/docker-tomcat' }
             }
             steps{
                 git branch:'master', url:'https://github.com/Teja-Chittamuri/HelloWolrd-DevopsE2E.git'
