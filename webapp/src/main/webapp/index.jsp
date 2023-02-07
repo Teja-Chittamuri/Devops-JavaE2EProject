@@ -1,7 +1,7 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>AZURE Devops Bootcamp</h1>
-    <p> Tools Covered: Github || Jenkins || Maven || sonarqube || Jfrog ||Docker || Kubernetes || Grafana </p>
+    <h1>Devops Bootcamp</h1>
+    <p>Tools Covered: Github || Jenkins || Maven || sonarqube || Jfrog ||Docker || Kubernetes || Grafana </p>
     <button type='submit'>Enroll Now</button>
     <hr>
      
