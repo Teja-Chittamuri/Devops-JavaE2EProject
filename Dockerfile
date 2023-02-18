@@ -4,7 +4,7 @@ RUN git clone https://github.com/Teja-Chittamuri/Devops-JavaE2EProject.git
 RUN  cd Devops-JavaE2EProject && mvn clean install 
 FROM tomcat:8-jre11
 RUN rm -rf  /usr/local/tomcat/webapps/*
-COPY --from=Build webapp/target/webapp.war  /usr/local/tomcat/webapps/ROOT.war
+COPY --from=Build Devops-JavaE2EProject/webapp/target/*.war  /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
 ENTRYPOINT ["catalina.sh","run"]
 
