@@ -6,7 +6,7 @@ pipeline {
         DOCKER_IMAGE = "vproapp"
     }
     stages {
-	stage('Generate artifact')
+	/* stage('Generate artifact')
    {
 	  agent{
 	    docker { image 'maven:3.8.1-adoptopenjdk-11'}
@@ -14,7 +14,7 @@ pipeline {
 		steps{
 		  sh 'mvn clean install -Dskiptests'
         }
-	} 
+	} */
     stage('Build Docker image') {
         steps {
             sh "docker build -t $DOCKER_IMAGE . "
@@ -22,7 +22,7 @@ pipeline {
         }
     stage('Login to ECR') {
             steps {
-      withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'awscredentials', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'awscredentials', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
                     sh "aws ecr get-login-password --region $ECR_REGION | docker login --username AWS --password-stdin $ECR_REGISTRY"
                 }
             }
@@ -35,4 +35,3 @@ pipeline {
         }
     }
 }
-
