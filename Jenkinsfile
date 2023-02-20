@@ -4,6 +4,7 @@ pipeline {
         ECR_REGISTRY = "735731564843.dkr.ecr.us-west-1.amazonaws.com/helloworldapp"
         ECR_REGION = "us-west-1"
         DOCKER_IMAGE = "vproapp"
+	SLACK_CHANNEL = "#jenkinsci_job"
     }
     stages {
 	/* stage('Generate artifact')
@@ -34,4 +35,32 @@ pipeline {
             }
         }
     }
+
+     post {
+    always {
+      slackSend(
+        color: getColor(),
+        message: getMessage(),
+        channel: env.SLACK_CHANNEL,
+        tokenCredentialId: 'slacklogin'
+      )
+    }
+  }
+}
+def getColor() {
+  if (currentBuild.result == 'SUCCESS') {
+    return 'good'
+  } else if (currentBuild.result == 'FAILURE') {
+    return 'danger'
+  } else {
+    return 'warning'
+  }
+}
+
+def getMessage() {
+  def message = "*Build ${currentBuild.result}:* ${currentBuild.fullDisplayName}"
+  if (env.BUILD_URL) {
+    message += "\n${env.BUILD_URL}"
+  }
+  return message
 }
